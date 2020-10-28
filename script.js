@@ -1,4 +1,4 @@
-function fibonacci()
+function fibonacci(index)
 {
 	var num1 = 0;
 	var num2 = 1;
@@ -6,7 +6,7 @@ function fibonacci()
 
 	document.write(num1+"<br>"+num2+"<br>");
 
-	for (var i = 0; i < 18; i++) 
+	for (var i = 2; i < index; i++) 
 	{
 		ans = num1 + num2;
 		document.write(ans+"<br>");
@@ -15,7 +15,7 @@ function fibonacci()
 	}
 }
 
-//fibonacci();
+fibonacci(20);
 
 function fibonacciAlt(index)
 {
